@@ -1,0 +1,3133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<net.sf.orcc.df:Unit xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:net.sf.orcc.df="http://orcc.sf.net/model/2011/Df" xmlns:net.sf.orcc.ir="http://orcc.sf.net/model/2011/Ir"
+    fileName="/StreamBench/src/jpeg/encoder/common/Tables.cal" lineNumber="3"
+    name="jpeg.encoder.common.Tables">
+  <constants lineNumber="5" name="zigzag">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprList">
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="5">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="6">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="14">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="15">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="27">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="28">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="2">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="4">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="7">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="13">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="16">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="26">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="29">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="42">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="3">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="8">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="12">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="17">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="25">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="30">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="41">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="43">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="9">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="11">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="18">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="24">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="31">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="40">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="44">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="53">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="10">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="19">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="23">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="32">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="39">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="45">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="52">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="54">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="20">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="22">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="33">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="38">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="46">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="51">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="55">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="60">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="21">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="34">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="37">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="47">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="50">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="56">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="59">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="61">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="35">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="36">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="48">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="49">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="57">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="58">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="62">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="63">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeList">
+      <sizeExpr xsi:type="net.sf.orcc.ir:ExprInt" value="64">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </sizeExpr>
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+    </type>
+  </constants>
+  <constants lineNumber="16" name="inv_zigzag">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprList">
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="8">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="16">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="9">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="2">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="3">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="10">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="17">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="24">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="32">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="25">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="18">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="11">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="4">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="5">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="12">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="19">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="26">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="33">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="40">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="48">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="41">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="34">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="27">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="20">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="13">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="6">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="7">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="14">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="21">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="28">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="35">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="42">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="49">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="56">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="57">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="50">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="43">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="36">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="29">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="22">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="15">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="23">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="30">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="37">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="44">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="51">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="58">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="59">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="52">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="45">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="38">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="31">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="39">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="46">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="53">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="60">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="61">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="54">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="47">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="55">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="62">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="63">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeList">
+      <sizeExpr xsi:type="net.sf.orcc.ir:ExprInt" value="64">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </sizeExpr>
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+    </type>
+  </constants>
+  <constants lineNumber="31" name="luma">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprList">
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="16">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="11">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="12">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="14">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="12">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="10">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="16">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="14">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="13">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="14">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="18">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="17">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="16">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="19">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="24">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="40">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="26">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="24">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="22">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="22">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="24">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="49">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="35">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="37">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="29">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="40">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="58">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="51">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="61">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="60">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="57">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="51">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="56">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="55">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="64">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="72">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="92">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="78">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="64">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="68">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="87">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="69">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="55">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="56">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="80">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="109">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="81">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="87">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="95">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="98">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="103">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="104">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="103">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="62">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="77">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="113">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="121">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="112">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="100">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="120">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="92">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="101">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="103">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeList">
+      <sizeExpr xsi:type="net.sf.orcc.ir:ExprInt" value="64">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </sizeExpr>
+      <type xsi:type="net.sf.orcc.ir:TypeInt" size="8"/>
+    </type>
+  </constants>
+  <constants lineNumber="37" name="chroma">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprList">
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="17">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="18">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="18">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="24">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="21">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="24">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="47">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="26">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="26">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="47">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="66">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="56">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="66">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeList">
+      <sizeExpr xsi:type="net.sf.orcc.ir:ExprInt" value="64">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </sizeExpr>
+      <type xsi:type="net.sf.orcc.ir:TypeInt" size="8"/>
+    </type>
+  </constants>
+  <constants lineNumber="44" name="QT">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprList">
+      <value xsi:type="net.sf.orcc.ir:ExprList">
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="16">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="11">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="10">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="16">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="24">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="40">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="51">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="51">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="12">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="12">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="14">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="19">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="26">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="58">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="60">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="55">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="14">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="13">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="16">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="24">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="40">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="57">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="69">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="56">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="14">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="17">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="22">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="29">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="51">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="87">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="80">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="62">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="18">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="22">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="37">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="56">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="68">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="109">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="103">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="77">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="24">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="35">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="55">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="64">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="81">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="104">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="113">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="92">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="49">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="64">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="78">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="87">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="103">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="121">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="120">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="101">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="72">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="92">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="95">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="98">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="112">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="100">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="103">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprList">
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="17">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="18">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="24">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="47">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="18">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="21">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="26">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="66">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="24">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="26">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="56">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="47">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="66">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+      </value>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeList">
+      <sizeExpr xsi:type="net.sf.orcc.ir:ExprInt" value="2">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+      </sizeExpr>
+      <type xsi:type="net.sf.orcc.ir:TypeList">
+        <sizeExpr xsi:type="net.sf.orcc.ir:ExprInt" value="64">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </sizeExpr>
+        <type xsi:type="net.sf.orcc.ir:TypeInt" size="8"/>
+      </type>
+    </type>
+  </constants>
+  <constants lineNumber="66" name="HT_Bits">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprList">
+      <value xsi:type="net.sf.orcc.ir:ExprList">
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="5">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprList">
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="3">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprList">
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="16">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="2">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="3">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="3">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="2">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="4">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="3">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="5">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="5">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="4">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="4">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="125">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprList">
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="17">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="2">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="2">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="4">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="4">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="3">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="4">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="7">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="5">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="4">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="4">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="2">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+        </value>
+        <value xsi:type="net.sf.orcc.ir:ExprInt" value="119">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+        </value>
+      </value>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeList">
+      <sizeExpr xsi:type="net.sf.orcc.ir:ExprInt" value="4">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </sizeExpr>
+      <type xsi:type="net.sf.orcc.ir:TypeList">
+        <sizeExpr xsi:type="net.sf.orcc.ir:ExprInt" value="17">
+          <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+        </sizeExpr>
+        <type xsi:type="net.sf.orcc.ir:TypeInt" size="8"/>
+      </type>
+    </type>
+  </constants>
+  <constants lineNumber="74" name="lumaDCBits">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprList">
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="5">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeList">
+      <sizeExpr xsi:type="net.sf.orcc.ir:ExprInt" value="16">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </sizeExpr>
+      <type xsi:type="net.sf.orcc.ir:TypeInt" size="4"/>
+    </type>
+  </constants>
+  <constants lineNumber="77" name="lumaACBits">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprList">
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="2">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="3">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="3">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="2">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="4">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="3">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="5">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="5">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="4">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="4">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="125">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeList">
+      <sizeExpr xsi:type="net.sf.orcc.ir:ExprInt" value="16">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </sizeExpr>
+      <type xsi:type="net.sf.orcc.ir:TypeInt" size="8"/>
+    </type>
+  </constants>
+  <constants lineNumber="82" name="chromaDCBits">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprList">
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="3">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeList">
+      <sizeExpr xsi:type="net.sf.orcc.ir:ExprInt" value="16">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </sizeExpr>
+      <type xsi:type="net.sf.orcc.ir:TypeInt" size="3"/>
+    </type>
+  </constants>
+  <constants lineNumber="85" name="chromaACBits">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprList">
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="2">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="2">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="4">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="4">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="3">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="4">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="7">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="5">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="4">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="4">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="2">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="119">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeList">
+      <sizeExpr xsi:type="net.sf.orcc.ir:ExprInt" value="16">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </sizeExpr>
+      <type xsi:type="net.sf.orcc.ir:TypeInt" size="8"/>
+    </type>
+  </constants>
+  <constants lineNumber="91" name="lumaDCValues">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprList">
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="2">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="3">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="4">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="5">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="6">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="7">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="8">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="9">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="10">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="11">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeList">
+      <sizeExpr xsi:type="net.sf.orcc.ir:ExprInt" value="12">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </sizeExpr>
+      <type xsi:type="net.sf.orcc.ir:TypeInt" size="5"/>
+    </type>
+  </constants>
+  <constants lineNumber="96" name="chromaDCValues">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprList">
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="2">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="3">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="4">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="5">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="6">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="7">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="8">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="9">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="10">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="11">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeList">
+      <sizeExpr xsi:type="net.sf.orcc.ir:ExprInt" value="12">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </sizeExpr>
+      <type xsi:type="net.sf.orcc.ir:TypeInt" size="5"/>
+    </type>
+  </constants>
+  <constants lineNumber="101" name="lumaACValues">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprList">
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="2">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="3">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="4">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="17">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="5">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="18">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="33">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="49">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="65">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="6">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="19">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="81">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="97">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="7">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="34">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="113">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="20">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="50">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="129">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="145">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="161">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="8">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="35">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="66">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="177">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="193">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="21">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="82">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="209">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="240">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="36">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="51">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="98">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="114">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="130">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="9">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="10">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="22">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="23">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="24">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="25">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="26">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="37">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="38">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="39">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="40">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="41">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="42">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="52">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="53">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="54">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="55">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="56">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="57">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="58">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="67">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="68">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="69">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="70">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="71">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="72">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="73">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="74">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="83">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="84">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="85">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="86">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="87">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="88">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="89">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="90">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="100">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="101">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="102">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="103">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="104">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="105">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="106">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="115">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="116">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="117">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="118">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="119">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="120">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="121">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="122">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="131">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="132">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="133">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="134">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="135">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="136">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="137">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="138">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="146">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="147">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="148">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="149">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="150">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="151">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="152">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="153">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="154">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="162">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="163">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="164">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="165">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="166">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="167">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="168">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="169">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="170">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="178">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="179">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="180">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="181">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="182">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="183">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="184">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="185">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="186">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="194">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="195">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="196">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="197">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="198">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="199">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="200">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="201">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="202">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="210">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="211">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="212">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="213">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="214">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="215">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="216">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="217">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="218">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="225">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="226">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="227">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="228">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="229">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="230">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="231">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="232">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="233">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="234">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="241">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="242">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="243">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="244">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="245">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="246">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="247">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="248">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="249">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="250">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeList">
+      <sizeExpr xsi:type="net.sf.orcc.ir:ExprInt" value="162">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </sizeExpr>
+      <type xsi:type="net.sf.orcc.ir:TypeInt" size="9"/>
+    </type>
+  </constants>
+  <constants lineNumber="128" name="chromaACValues">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprList">
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="2">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="3">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="17">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="4">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="5">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="33">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="49">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="6">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="18">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="65">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="81">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="7">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="97">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="113">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="19">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="34">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="50">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="129">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="8">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="20">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="66">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="145">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="161">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="177">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="193">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="9">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="35">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="51">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="82">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="240">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="21">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="98">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="114">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="209">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="10">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="22">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="36">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="52">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="225">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="37">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="241">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="23">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="24">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="25">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="26">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="38">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="39">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="40">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="41">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="42">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="53">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="54">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="55">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="56">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="57">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="58">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="67">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="68">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="69">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="70">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="71">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="72">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="73">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="74">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="83">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="84">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="85">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="86">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="87">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="88">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="89">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="90">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="99">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="100">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="101">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="102">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="103">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="104">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="105">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="106">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="115">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="116">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="117">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="118">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="119">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="120">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="121">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="122">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="130">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="131">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="132">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="133">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="134">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="135">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="136">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="137">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="138">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="146">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="147">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="148">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="149">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="150">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="151">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="152">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="153">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="154">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="162">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="163">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="164">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="165">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="166">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="167">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="168">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="169">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="170">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="178">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="179">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="180">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="181">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="182">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="183">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="184">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="185">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="186">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="194">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="195">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="196">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="197">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="198">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="199">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="200">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="201">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="202">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="210">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="211">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="212">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="213">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="214">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="215">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="216">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="217">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="218">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="226">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="227">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="228">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="229">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="230">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="231">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="232">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="233">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="234">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="242">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="243">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="244">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="245">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="246">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="247">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="248">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="249">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="250">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </value>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeList">
+      <sizeExpr xsi:type="net.sf.orcc.ir:ExprInt" value="162">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="8"/>
+      </sizeExpr>
+      <type xsi:type="net.sf.orcc.ir:TypeInt" size="9"/>
+    </type>
+  </constants>
+  <constants lineNumber="153" name="DivTab">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprList">
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="65536">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="17"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="32768">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="16"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="21845">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="15"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="16384">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="15"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="13107">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="14"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="10923">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="14"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="9362">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="14"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="8192">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="14"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="7282">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="13"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="6554">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="13"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="5958">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="13"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="5461">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="13"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="5041">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="13"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="4681">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="13"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="4369">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="13"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="4096">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="13"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="3855">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="12"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="3641">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="12"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="3449">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="12"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="3277">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="12"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="3121">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="12"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="2979">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="12"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="2849">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="12"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="2731">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="12"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="2621">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="12"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="2521">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="12"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="2427">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="12"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="2341">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="12"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="2260">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="12"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="2185">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="12"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="2114">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="12"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="2048">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="12"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1986">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="11"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1928">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="11"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1872">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="11"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1820">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="11"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1771">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="11"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1725">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="11"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1680">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="11"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1638">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="11"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1598">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="11"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1560">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="11"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1524">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="11"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1489">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="11"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1456">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="11"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1425">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="11"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1394">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="11"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1365">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="11"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1337">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="11"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1311">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="11"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1285">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="11"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1260">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="11"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1237">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="11"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1214">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="11"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1192">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="11"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1170">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="11"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1150">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="11"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1130">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="11"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1111">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="11"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1092">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="11"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1074">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="11"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1057">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="11"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1040">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="11"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1024">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="11"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="1008">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="993">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="978">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="964">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="950">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="936">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="923">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="910">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="898">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="886">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="874">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="862">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="851">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="840">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="830">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="819">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="809">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="799">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="790">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="780">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="771">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="762">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="753">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="745">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="736">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="728">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="720">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="712">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="705">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="697">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="690">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="683">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="676">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="669">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="662">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="655">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="649">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="643">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="636">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="630">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="624">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="618">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="612">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="607">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="601">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="596">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="590">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="585">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="580">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="575">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="570">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="565">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="560">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="555">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="551">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="546">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+      <value xsi:type="net.sf.orcc.ir:ExprInt" value="542">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+      </value>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeList">
+      <sizeExpr xsi:type="net.sf.orcc.ir:ExprInt" value="121">
+        <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+      </sizeExpr>
+      <type xsi:type="net.sf.orcc.ir:TypeInt" size="17"/>
+    </type>
+  </constants>
+</net.sf.orcc.df:Unit>

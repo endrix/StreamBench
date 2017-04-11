@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<net.sf.orcc.df:Actor xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:net.sf.orcc.df="http://orcc.sf.net/model/2011/Df" xmlns:net.sf.orcc.ir="http://orcc.sf.net/model/2011/Ir"
+    label="gsm.lpc.TransformationToLogAreaRatios" actionsOutsideFsm="#//@actions.0"
+    fileName="/StreamBench/src/gsm/lpc/TransformationToLogAreaRatios.cal" lineNumber="44">
+  <actions>
+    <body lineNumber="49" name="untagged_0">
+      <locals assignable="true" defs="#//@actions.0/@body/@blocks.0/@instructions.0/@target"
+          lineNumber="49" name="lar_in" uses="#//@actions.0/@body/@blocks.0/@instructions.1/@value/@use #//@actions.0/@body/@blocks.2/@condition/@e1/@use">
+        <type xsi:type="net.sf.orcc.ir:TypeInt" size="16"/>
+      </locals>
+      <locals assignable="true" defs="#//@actions.0/@body/@blocks.2/@thenBlocks.0/@instructions.0/@target #//@actions.0/@body/@blocks.2/@elseBlocks.0/@instructions.0/@target"
+          lineNumber="51" name="lar_out" uses="#//@actions.0/@body/@blocks.3/@instructions.0/@value/@use">
+        <type xsi:type="net.sf.orcc.ir:TypeInt" size="16"/>
+      </locals>
+      <locals assignable="true" defs="#//@actions.0/@body/@blocks.0/@instructions.1/@target #//@actions.0/@body/@blocks.0/@instructions.2/@target #//@actions.0/@body/@blocks.1/@thenBlocks.0/@instructions.0/@target #//@actions.0/@body/@blocks.1/@elseBlocks.0/@thenBlocks.0/@instructions.0/@target #//@actions.0/@body/@blocks.1/@elseBlocks.0/@elseBlocks.0/@instructions.0/@target #//@actions.0/@body/@blocks.1/@elseBlocks.0/@elseBlocks.0/@instructions.1/@target"
+          lineNumber="52" name="temp" uses="#//@actions.0/@body/@blocks.0/@instructions.2/@arguments.0/@value/@use #//@actions.0/@body/@blocks.1/@condition/@e1/@use #//@actions.0/@body/@blocks.1/@thenBlocks.0/@instructions.0/@value/@e1/@use #//@actions.0/@body/@blocks.1/@elseBlocks.0/@condition/@e1/@use #//@actions.0/@body/@blocks.1/@elseBlocks.0/@thenBlocks.0/@instructions.0/@value/@e1/@use #//@actions.0/@body/@blocks.1/@elseBlocks.0/@elseBlocks.0/@instructions.0/@value/@e1/@use #//@actions.0/@body/@blocks.1/@elseBlocks.0/@elseBlocks.0/@instructions.1/@value/@e1/@use #//@actions.0/@body/@blocks.2/@thenBlocks.0/@instructions.0/@value/@expr/@use #//@actions.0/@body/@blocks.2/@elseBlocks.0/@instructions.0/@value/@use">
+        <type xsi:type="net.sf.orcc.ir:TypeInt" size="16"/>
+      </locals>
+      <blocks xsi:type="net.sf.orcc.ir:BlockBasic">
+        <instructions xsi:type="net.sf.orcc.ir:InstLoad" lineNumber="49">
+          <indexes xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+            <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+          </indexes>
+          <source variable="#//@actions.0/@inputPattern/@variables.0"/>
+          <target variable="#//@actions.0/@body/@locals.0"/>
+        </instructions>
+        <instructions xsi:type="net.sf.orcc.ir:InstAssign" lineNumber="54">
+          <target variable="#//@actions.0/@body/@locals.2"/>
+          <value xsi:type="net.sf.orcc.ir:ExprVar">
+            <use variable="#//@actions.0/@body/@locals.0"/>
+          </value>
+        </instructions>
+        <instructions xsi:type="net.sf.orcc.ir:InstCall" lineNumber="55" procedure="../Constants.ir#//@procedures.1">
+          <arguments xsi:type="net.sf.orcc.ir:ArgByVal">
+            <value xsi:type="net.sf.orcc.ir:ExprVar">
+              <use variable="#//@actions.0/@body/@locals.2"/>
+            </value>
+          </arguments>
+          <target variable="#//@actions.0/@body/@locals.2"/>
+        </instructions>
+      </blocks>
+      <blocks xsi:type="net.sf.orcc.ir:BlockIf" lineNumber="56">
+        <condition xsi:type="net.sf.orcc.ir:ExprBinary" op="LT">
+          <e1 xsi:type="net.sf.orcc.ir:ExprVar">
+            <use variable="#//@actions.0/@body/@locals.2"/>
+          </e1>
+          <e2 xsi:type="net.sf.orcc.ir:ExprInt" value="22118">
+            <type xsi:type="net.sf.orcc.ir:TypeUint" size="15"/>
+          </e2>
+          <type xsi:type="net.sf.orcc.ir:TypeBool"/>
+        </condition>
+        <elseBlocks xsi:type="net.sf.orcc.ir:BlockIf" lineNumber="59">
+          <condition xsi:type="net.sf.orcc.ir:ExprBinary" op="LT">
+            <e1 xsi:type="net.sf.orcc.ir:ExprVar">
+              <use variable="#//@actions.0/@body/@locals.2"/>
+            </e1>
+            <e2 xsi:type="net.sf.orcc.ir:ExprInt" value="31130">
+              <type xsi:type="net.sf.orcc.ir:TypeUint" size="15"/>
+            </e2>
+            <type xsi:type="net.sf.orcc.ir:TypeBool"/>
+          </condition>
+          <elseBlocks xsi:type="net.sf.orcc.ir:BlockBasic">
+            <instructions xsi:type="net.sf.orcc.ir:InstAssign" lineNumber="62">
+              <target variable="#//@actions.0/@body/@locals.2"/>
+              <value xsi:type="net.sf.orcc.ir:ExprBinary" op="MINUS">
+                <e1 xsi:type="net.sf.orcc.ir:ExprVar">
+                  <use variable="#//@actions.0/@body/@locals.2"/>
+                </e1>
+                <e2 xsi:type="net.sf.orcc.ir:ExprInt" value="26112">
+                  <type xsi:type="net.sf.orcc.ir:TypeUint" size="15"/>
+                </e2>
+                <type xsi:type="net.sf.orcc.ir:TypeInt" size="16"/>
+              </value>
+            </instructions>
+            <instructions xsi:type="net.sf.orcc.ir:InstAssign" lineNumber="63">
+              <target variable="#//@actions.0/@body/@locals.2"/>
+              <value xsi:type="net.sf.orcc.ir:ExprBinary" op="SHIFT_LEFT">
+                <e1 xsi:type="net.sf.orcc.ir:ExprVar">
+                  <use variable="#//@actions.0/@body/@locals.2"/>
+                </e1>
+                <e2 xsi:type="net.sf.orcc.ir:ExprInt" value="2">
+                  <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+                </e2>
+                <type xsi:type="net.sf.orcc.ir:TypeInt" size="19"/>
+              </value>
+            </instructions>
+          </elseBlocks>
+          <joinBlock/>
+          <thenBlocks xsi:type="net.sf.orcc.ir:BlockBasic">
+            <instructions xsi:type="net.sf.orcc.ir:InstAssign" lineNumber="60">
+              <target variable="#//@actions.0/@body/@locals.2"/>
+              <value xsi:type="net.sf.orcc.ir:ExprBinary" op="MINUS">
+                <e1 xsi:type="net.sf.orcc.ir:ExprVar">
+                  <use variable="#//@actions.0/@body/@locals.2"/>
+                </e1>
+                <e2 xsi:type="net.sf.orcc.ir:ExprInt" value="11059">
+                  <type xsi:type="net.sf.orcc.ir:TypeUint" size="14"/>
+                </e2>
+                <type xsi:type="net.sf.orcc.ir:TypeInt" size="16"/>
+              </value>
+            </instructions>
+          </thenBlocks>
+        </elseBlocks>
+        <joinBlock/>
+        <thenBlocks xsi:type="net.sf.orcc.ir:BlockBasic">
+          <instructions xsi:type="net.sf.orcc.ir:InstAssign" lineNumber="57">
+            <target variable="#//@actions.0/@body/@locals.2"/>
+            <value xsi:type="net.sf.orcc.ir:ExprBinary" op="SHIFT_RIGHT">
+              <e1 xsi:type="net.sf.orcc.ir:ExprVar">
+                <use variable="#//@actions.0/@body/@locals.2"/>
+              </e1>
+              <e2 xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+                <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+              </e2>
+              <type xsi:type="net.sf.orcc.ir:TypeInt" size="16"/>
+            </value>
+          </instructions>
+        </thenBlocks>
+      </blocks>
+      <blocks xsi:type="net.sf.orcc.ir:BlockIf" lineNumber="67">
+        <condition xsi:type="net.sf.orcc.ir:ExprBinary" op="LT">
+          <e1 xsi:type="net.sf.orcc.ir:ExprVar">
+            <use variable="#//@actions.0/@body/@locals.0"/>
+          </e1>
+          <e2 xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+            <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+          </e2>
+          <type xsi:type="net.sf.orcc.ir:TypeBool"/>
+        </condition>
+        <elseBlocks xsi:type="net.sf.orcc.ir:BlockBasic">
+          <instructions xsi:type="net.sf.orcc.ir:InstAssign" lineNumber="67">
+            <target variable="#//@actions.0/@body/@locals.1"/>
+            <value xsi:type="net.sf.orcc.ir:ExprVar">
+              <use variable="#//@actions.0/@body/@locals.2"/>
+            </value>
+          </instructions>
+        </elseBlocks>
+        <joinBlock/>
+        <thenBlocks xsi:type="net.sf.orcc.ir:BlockBasic">
+          <instructions xsi:type="net.sf.orcc.ir:InstAssign" lineNumber="67">
+            <target variable="#//@actions.0/@body/@locals.1"/>
+            <value xsi:type="net.sf.orcc.ir:ExprUnary" op="MINUS">
+              <expr xsi:type="net.sf.orcc.ir:ExprVar">
+                <use variable="#//@actions.0/@body/@locals.2"/>
+              </expr>
+              <type xsi:type="net.sf.orcc.ir:TypeInt" size="16"/>
+            </value>
+          </instructions>
+        </thenBlocks>
+      </blocks>
+      <blocks xsi:type="net.sf.orcc.ir:BlockBasic">
+        <instructions xsi:type="net.sf.orcc.ir:InstStore" lineNumber="49">
+          <indexes xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+            <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+          </indexes>
+          <target variable="#//@actions.0/@outputPattern/@variables.0"/>
+          <value xsi:type="net.sf.orcc.ir:ExprVar">
+            <use variable="#//@actions.0/@body/@locals.1"/>
+          </value>
+        </instructions>
+        <instructions xsi:type="net.sf.orcc.ir:InstReturn"/>
+      </blocks>
+      <returnType xsi:type="net.sf.orcc.ir:TypeVoid"/>
+    </body>
+    <inputPattern ports="#//@inputs.0">
+      <numTokensMap key="#//@inputs.0" value="1"/>
+      <portToVarMap key="#//@inputs.0" value="#//@actions.0/@inputPattern/@variables.0"/>
+      <variables assignable="true" lineNumber="49" name="LARC_IN" uses="#//@actions.0/@body/@blocks.0/@instructions.0/@source">
+        <type xsi:type="net.sf.orcc.ir:TypeList">
+          <sizeExpr xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+            <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+          </sizeExpr>
+          <type xsi:type="net.sf.orcc.ir:TypeInt" size="16"/>
+        </type>
+      </variables>
+      <varToPortMap key="#//@actions.0/@inputPattern/@variables.0" value="#//@inputs.0"/>
+    </inputPattern>
+    <outputPattern ports="#//@outputs.0">
+      <numTokensMap key="#//@outputs.0" value="1"/>
+      <portToVarMap key="#//@outputs.0" value="#//@actions.0/@outputPattern/@variables.0"/>
+      <variables assignable="true" defs="#//@actions.0/@body/@blocks.3/@instructions.0/@target"
+          lineNumber="49" name="LARC_OUT">
+        <type xsi:type="net.sf.orcc.ir:TypeList">
+          <sizeExpr xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+            <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+          </sizeExpr>
+          <type xsi:type="net.sf.orcc.ir:TypeInt" size="16"/>
+        </type>
+      </variables>
+      <varToPortMap key="#//@actions.0/@outputPattern/@variables.0" value="#//@outputs.0"/>
+    </outputPattern>
+    <peekPattern/>
+    <scheduler lineNumber="49" name="isSchedulable_untagged_0">
+      <locals assignable="true" defs="#//@actions.0/@scheduler/@blocks.0/@instructions.0/@target"
+          name="result" uses="#//@actions.0/@scheduler/@blocks.0/@instructions.1/@value/@use">
+        <type xsi:type="net.sf.orcc.ir:TypeBool"/>
+      </locals>
+      <blocks xsi:type="net.sf.orcc.ir:BlockBasic">
+        <instructions xsi:type="net.sf.orcc.ir:InstAssign">
+          <target variable="#//@actions.0/@scheduler/@locals.0"/>
+          <value xsi:type="net.sf.orcc.ir:ExprBool" value="true"/>
+        </instructions>
+        <instructions xsi:type="net.sf.orcc.ir:InstReturn">
+          <value xsi:type="net.sf.orcc.ir:ExprVar">
+            <use variable="#//@actions.0/@scheduler/@locals.0"/>
+          </value>
+        </instructions>
+      </blocks>
+      <returnType xsi:type="net.sf.orcc.ir:TypeBool"/>
+    </scheduler>
+    <tag/>
+  </actions>
+  <inputs label="LARC_IN">
+    <type xsi:type="net.sf.orcc.ir:TypeInt" size="16"/>
+  </inputs>
+  <outputs label="LARC_OUT">
+    <type xsi:type="net.sf.orcc.ir:TypeInt" size="16"/>
+  </outputs>
+</net.sf.orcc.df:Actor>

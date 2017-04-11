@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<net.sf.orcc.df:Unit xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:net.sf.orcc.df="http://orcc.sf.net/model/2011/Df" xmlns:net.sf.orcc.ir="http://orcc.sf.net/model/2011/Ir"
+    fileName="/StreamBench/src/mips/Constants.cal" lineNumber="32"
+    name="mips.Constants">
+  <constants lineNumber="34" name="R">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="36" name="ADDU">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="33">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="37" name="SUBU">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="35">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="39" name="MULT">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="24">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="40" name="MULTU">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="25">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="42" name="MFHI">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="16">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="43" name="MFLO">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="18">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="45" name="AND">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="36">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="46" name="OR">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="37">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="47" name="XOR">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="38">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="48" name="SLL">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="0">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="49" name="SRL">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="2">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="50" name="SLLV">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="4">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="51" name="SRLV">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="6">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="53" name="SLT">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="42">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="54" name="SLTU">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="43">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="56" name="JR">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="8">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="58" name="J">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="2">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="59" name="JAL">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="3">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="61" name="ADDIU">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="9">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="62" name="ANDI">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="12">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="63" name="ORI">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="13">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="64" name="XORI">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="14">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="66" name="LW">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="35">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="67" name="SW">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="43">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="68" name="LUI">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="15">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="70" name="BEQ">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="4">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="71" name="BNE">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="5">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="72" name="BGEZ">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="74" name="SLTI">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="10">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="75" name="SLTIU">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="11">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+</net.sf.orcc.df:Unit>

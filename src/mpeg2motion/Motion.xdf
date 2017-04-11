@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDF name="Motion">
+    <Instance id="Source">
+        <Class name="mpeg2motion.Source"/>
+    </Instance>
+    <Instance id="AlgoMotion">
+        <Class name="mpeg2motion.AlgoMotion"/>
+    </Instance>
+    <Instance id="TestOutput">
+        <Class name="mpeg2motion.TestOutput"/>
+    </Instance>
+    <Connection dst="AlgoMotion" dst-port="INMVFS" src="Source" src-port="MVFS"/>
+    <Connection dst="AlgoMotion" dst-port="INPMV" src="Source" src-port="PMV"/>
+    <Connection dst="TestOutput" dst-port="INMVFS" src="AlgoMotion" src-port="OUTMVFS"/>
+    <Connection dst="TestOutput" dst-port="INPMV" src="AlgoMotion" src-port="OUTPMV"/>
+</XDF>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDF name="fdct2d">
+    <Port kind="Input" name="In">
+        <Type name="int">
+            <Entry kind="Expr" name="size">
+                <Expr kind="Literal" literal-kind="Integer" value="8"/>
+            </Entry>
+        </Type>
+    </Port>
+    <Port kind="Output" name="Out">
+        <Type name="int">
+            <Entry kind="Expr" name="size">
+                <Expr kind="Literal" literal-kind="Integer" value="32"/>
+            </Entry>
+        </Type>
+    </Port>
+    <Instance id="scale">
+        <Class name="jpeg.encoder.fdct.Scale"/>
+    </Instance>
+    <Instance id="row">
+        <Class name="jpeg.encoder.fdct.scaled_1d_fdct"/>
+    </Instance>
+    <Instance id="transpose">
+        <Class name="jpeg.encoder.fdct.transpose"/>
+    </Instance>
+    <Instance id="col">
+        <Class name="jpeg.encoder.fdct.scaled_1d_fdct"/>
+    </Instance>
+    <Instance id="retranspose">
+        <Class name="jpeg.encoder.fdct.transpose"/>
+    </Instance>
+    <Instance id="righshift">
+        <Class name="jpeg.encoder.fdct.rightshift"/>
+    </Instance>
+    <Connection dst="transpose" dst-port="In" src="row" src-port="Out"/>
+    <Connection dst="col" dst-port="In" src="transpose" src-port="Out"/>
+    <Connection dst="retranspose" dst-port="In" src="col" src-port="Out"/>
+    <Connection dst="righshift" dst-port="In" src="retranspose" src-port="Out"/>
+    <Connection dst="scale" dst-port="In" src="" src-port="In"/>
+    <Connection dst="row" dst-port="In" src="scale" src-port="Out"/>
+    <Connection dst="" dst-port="Out" src="righshift" src-port="Out"/>
+</XDF>

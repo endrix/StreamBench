@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<net.sf.orcc.df:Unit xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:net.sf.orcc.df="http://orcc.sf.net/model/2011/Df" xmlns:net.sf.orcc.ir="http://orcc.sf.net/model/2011/Ir"
+    fileName="/StreamBench/src/filters/common/constants.cal" lineNumber="16"
+    name="filters.common.constants">
+  <constants lineNumber="18" name="SAMPLE_SZ">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="32">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+</net.sf.orcc.df:Unit>
