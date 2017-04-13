@@ -1,0 +1,53 @@
+package mpeg4sp;
+
+unit Constants :
+
+	// Ports size declaration
+	int ADDR_SZ			= 24;
+	int BTYPE_SZ		= 12;
+	int FLAG_SZ			= 4;
+	int MB_COORD_SZ		= 8;
+	int MV_SZ			= 9;
+	int PIX_SZ			= 9;
+	int QUANT_SZ		= 6;
+	int SAMPLE_SZ		= 13;
+	int SAMPLE_COUNT_SZ	= 8;
+	int SCALER_SZ       = 7;
+
+	int FCODE_SHIFT = 6;
+	int FOURMV = 4;
+	int ROUND_TYPE = 32;
+	int VOP_FCODE_FOR_LENGTH = 3;
+
+	
+	int OUT_SZ = 9;
+	
+	// Maximum image width (in macroblocks)
+	//int MAXW_IN_MB = 120 + 1; // HD
+	//int CLOSEST_POW2_MAXW_IN_MB = 128; // HD
+	int MAXW_IN_MB = 11 + 1; // QCIF
+	int CLOSEST_POW2_MAXW_IN_MB = 16; // QCIF
+	//int MAXW_IN_MB = 22 + 1; // CIF
+	//int CLOSEST_POW2_MAXW_IN_MB = 32; // CIF
+	
+	// Macroblock size
+	int BLOCK_SIZE = 64;
+
+	int ACCODED = 2;
+	int ACPRED = 1;
+	int DCVAL = 128*8;
+	
+	
+	//
+	int FCODE_MASK = 448;
+	int QUANT_MASK = 31;
+
+	int NEWVOP = 2048;
+	int INTRA = 1024;
+	int INTER = 512;
+	int MOTION = 8;
+	
+	int MEMSIZE = 1 << 22; //HD
+	//int MEMSIZE = 524268; // QCIF
+
+end

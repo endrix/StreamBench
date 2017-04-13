@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDF name="DUT_MPEG4SP">
+    <Instance id="MPEG4SP_Decoder">
+        <Class name="mpeg4sp.DecoderCore"/>
+    </Instance>
+    <Instance id="Source">
+        <Class name="mpeg4sp.SourceAkiyo5f"/>
+    </Instance>
+    <Instance id="Sink_VIDEO">
+        <Class name="mpeg4sp.Sink"/>
+    </Instance>
+    <Instance id="Sink_WIDTH">
+        <Class name="mpeg4sp.SinkWIDTH"/>
+    </Instance>
+    <Instance id="Sink_HEIGHT">
+        <Class name="mpeg4sp.SinkHEIGHT"/>
+    </Instance>
+    <Connection dst="MPEG4SP_Decoder" dst-port="bits" src="Source" src-port="Out"/>
+    <Connection dst="Sink_VIDEO" dst-port="In" src="MPEG4SP_Decoder" src-port="VIDEO"/>
+    <Connection dst="Sink_WIDTH" dst-port="In" src="MPEG4SP_Decoder" src-port="WIDTH"/>
+    <Connection dst="Sink_HEIGHT" dst-port="In" src="MPEG4SP_Decoder" src-port="HEIGHT"/>
+</XDF>

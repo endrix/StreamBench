@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<net.sf.orcc.df:Unit xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:net.sf.orcc.df="http://orcc.sf.net/model/2011/Df" xmlns:net.sf.orcc.ir="http://orcc.sf.net/model/2011/Ir"
+    fileName="/StreamBench/src/mpeg4sp/Constants.cal" lineNumber="3"
+    name="mpeg4sp.Constants">
+  <constants lineNumber="6" name="ADDR_SZ">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="24">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="7" name="BTYPE_SZ">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="12">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="8" name="FLAG_SZ">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="4">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="9" name="MB_COORD_SZ">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="8">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="10" name="MV_SZ">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="9">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="11" name="PIX_SZ">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="9">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="12" name="QUANT_SZ">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="6">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="13" name="SAMPLE_SZ">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="13">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="14" name="SAMPLE_COUNT_SZ">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="8">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="15" name="SCALER_SZ">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="7">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="17" name="FCODE_SHIFT">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="6">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="18" name="FOURMV">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="4">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="3"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="19" name="ROUND_TYPE">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="32">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="6"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="20" name="VOP_FCODE_FOR_LENGTH">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="3">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="23" name="OUT_SZ">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="9">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="28" name="MAXW_IN_MB">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="12">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="29" name="CLOSEST_POW2_MAXW_IN_MB">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="16">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="34" name="BLOCK_SIZE">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="64">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="7"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="36" name="ACCODED">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="2">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="2"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="37" name="ACPRED">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="1">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="1"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="38" name="DCVAL">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="1024">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="11"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="42" name="FCODE_MASK">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="448">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="9"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="43" name="QUANT_MASK">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="31">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="5"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="45" name="NEWVOP">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="2048">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="12"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="46" name="INTRA">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="1024">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="11"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="47" name="INTER">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="512">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="10"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="48" name="MOTION">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="8">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="4"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+  <constants lineNumber="50" name="MEMSIZE">
+    <initialValue xsi:type="net.sf.orcc.ir:ExprInt" value="4194304">
+      <type xsi:type="net.sf.orcc.ir:TypeUint" size="23"/>
+    </initialValue>
+    <type xsi:type="net.sf.orcc.ir:TypeInt"/>
+  </constants>
+</net.sf.orcc.df:Unit>
