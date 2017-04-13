@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDF name="MIPSCore">
+    <Port kind="Output" name="RESULT">
+        <Type name="int">
+            <Entry kind="Expr" name="size">
+                <Expr kind="Literal" literal-kind="Integer" value="32"/>
+            </Entry>
+        </Type>
+    </Port>
+    <Instance id="PROC">
+        <Class name="mips.mips"/>
+    </Instance>
+    <Connection dst="" dst-port="RESULT" src="PROC" src-port="result"/>
+</XDF>

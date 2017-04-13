@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDF name="DUT_Motion">
+    <Instance id="TestOutput">
+        <Class name="mpeg2motion.TestOutput"/>
+    </Instance>
+    <Instance id="Source">
+        <Class name="mpeg2motion.Source"/>
+    </Instance>
+    <Instance id="MPEG2_Motion">
+        <Class name="mpeg2motion.MotionCore"/>
+    </Instance>
+    <Connection dst="MPEG2_Motion" dst-port="INMVFS" src="Source" src-port="MVFS"/>
+    <Connection dst="MPEG2_Motion" dst-port="INPMV" src="Source" src-port="PMV"/>
+    <Connection dst="TestOutput" dst-port="INMVFS" src="MPEG2_Motion" src-port="OUTMVFS"/>
+    <Connection dst="TestOutput" dst-port="INPMV" src="MPEG2_Motion" src-port="OUTPMV"/>
+</XDF>

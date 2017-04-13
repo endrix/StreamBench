@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDF name="MotionCore">
+    <Port kind="Input" name="INMVFS">
+        <Type name="uint">
+            <Entry kind="Expr" name="size">
+                <Expr kind="Literal" literal-kind="Integer" value="32"/>
+            </Entry>
+        </Type>
+    </Port>
+    <Port kind="Input" name="INPMV">
+        <Type name="uint">
+            <Entry kind="Expr" name="size">
+                <Expr kind="Literal" literal-kind="Integer" value="32"/>
+            </Entry>
+        </Type>
+    </Port>
+    <Port kind="Output" name="OUTMVFS">
+        <Type name="uint">
+            <Entry kind="Expr" name="size">
+                <Expr kind="Literal" literal-kind="Integer" value="32"/>
+            </Entry>
+        </Type>
+    </Port>
+    <Port kind="Output" name="OUTPMV">
+        <Type name="uint">
+            <Entry kind="Expr" name="size">
+                <Expr kind="Literal" literal-kind="Integer" value="32"/>
+            </Entry>
+        </Type>
+    </Port>
+    <Instance id="AlgoMotion">
+        <Class name="mpeg2motion.AlgoMotion"/>
+    </Instance>
+    <Connection dst="AlgoMotion" dst-port="INMVFS" src="" src-port="INMVFS"/>
+    <Connection dst="AlgoMotion" dst-port="INPMV" src="" src-port="INPMV"/>
+    <Connection dst="" dst-port="OUTMVFS" src="AlgoMotion" src-port="OUTMVFS"/>
+    <Connection dst="" dst-port="OUTPMV" src="AlgoMotion" src-port="OUTPMV"/>
+</XDF>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDF name="DUT_ADCPMCodec">
+    <Instance id="Source">
+        <Class name="adpcm.encoder.Source"/>
+    </Instance>
+    <Instance id="TestOutput">
+        <Class name="adpcm.decoder.TestOutput"/>
+    </Instance>
+    <Instance id="ADCPM_Codec">
+        <Class name="adpcm.ADPCMCodecCore"/>
+    </Instance>
+    <Connection dst="ADCPM_Codec" dst-port="XIN" src="Source" src-port="xOut"/>
+    <Connection dst="TestOutput" dst-port="In" src="ADCPM_Codec" src-port="XOUT"/>
+</XDF>

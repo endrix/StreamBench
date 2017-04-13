@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XDF name="DUT_MIPS">
+    <Instance id="MIPS">
+        <Class name="mips.MIPSCore"/>
+    </Instance>
+    <Instance id="Sink">
+        <Class name="mips.Test"/>
+    </Instance>
+    <Connection dst="Sink" dst-port="VALUE" src="MIPS" src-port="RESULT"/>
+</XDF>
