@@ -67,8 +67,6 @@ actor RasterToMB()
 
 	List(type: List(type: uint(size=8), size=maxw_in_mb * 8), size=8) crTab;
 	
-	List(type: int(size=8), size=384) ycbcr;
-	 
 	getSzW: action SOI:[soi] ==> 
 	do
 		mbwidth := (soi + 15) >> 4;
@@ -167,35 +165,64 @@ actor RasterToMB()
 		mbCount := 0;
 	end
 
-	send.start: action ==>
-	do
-		foreach int i in 0 .. 7 do
-			foreach int j in 0 .. 7 do
-				ycbcr[8 * i + j]       := yTab[i][j + 16 * mbCount];
-				ycbcr[8 * i + j + 64]  := yTab[i][(j + 8) + 16 * mbCount];
-				ycbcr[8 * i + j + 128] := yTab[i + 8][j + 16 * mbCount];
-				ycbcr[8 * i + j + 192] := yTab[i + 8][j + 8 + 16 * mbCount];
-				ycbcr[8 * i + j + 256] := cbTab[i][j + (8 * mbCount)];
-				ycbcr[8 * i + j + 320] := crTab[i][j + (8 * mbCount)];
-			end
-		end
-	end
+	int block_number := 0;
 	
-	send_send: action ==> YCbCr:[token]
+	int bn_i := 0;
+	int bn_j := 0;
+	
+	int Counter_S := 0;
+	
+	send: action ==> YCbCr:[token]
 	var
 		int(size=8) token
 	do
-		token := ycbcr[Counter];
-		Counter := Counter + 1;
+		if(block_number = 0) then
+			token := yTab[bn_i][bn_j + 16 * mbCount];
+		elsif (block_number = 1) then
+			token := yTab[bn_i][(bn_j + 8) + 16 * mbCount];
+		elsif (block_number = 2) then
+			token := yTab[bn_i + 8][bn_j + 16 * mbCount];
+		elsif (block_number = 3) then
+			token := yTab[bn_i + 8][bn_j + 8 + 16 * mbCount];
+		elsif (block_number = 4) then
+			token := cbTab[bn_i][bn_j + (8 * mbCount)];
+		else 
+			token := crTab[bn_i][bn_j + (8 * mbCount)];
+		end 		
+		
+		bn_j := bn_j + 1;
+		if(bn_j = 8) then
+			bn_i := bn_i + 1;
+			bn_j := 0;
+			if(bn_i = 8) then
+				bn_i := 0;
+			end
+		end
+		
+		Counter_S := Counter_S + 1;
+		
+		if (Counter_S = 64) then
+			block_number := 1;
+		elsif (Counter_S = 128) then
+			block_number := 2;
+		elsif (Counter_S = 192) then
+			block_number := 3;
+		elsif (Counter_S = 256) then
+			block_number := 4;
+		elsif (Counter_S = 320) then
+			block_number := 5;
+		elsif (Counter_S = 384) then
+			block_number := 0;
+		end
 	end 
 	
-	send.stop: action ==>
+	send_stop: action ==>
 	guard
-		Counter = 384
+		Counter_S = 384
 	do
 		mbCount := mbCount + 1;
 		mbTotalCount := mbTotalCount + 1;
-		Counter := 0;
+		Counter_S := 0;
 	end
 	
 
@@ -213,9 +240,8 @@ actor RasterToMB()
 		
 		s2		(done)					--> s3;
 		
-		s3		(send.start)			--> s31;
-		s31		(send_send)				--> s31;
-		s31		(send.stop)				--> s3;
+		s3		(send)					--> s3;
+		s3		(send_stop)				--> s3;
 		
 		s3 		(doneSend.Line)			--> s2;
 		s3 		(doneSend.EOI)			--> s0;
@@ -228,7 +254,7 @@ actor RasterToMB()
 		done > storeY.start;
 		done > storeCbCr.start;
 		
-		send.stop > send_send;
-		doneSend.EOI > doneSend.Line > send.start;
+		send_stop > send;
+		doneSend.EOI > doneSend.Line > send;
 	end
 end
